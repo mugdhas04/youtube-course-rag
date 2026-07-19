@@ -80,7 +80,7 @@ This is a standard RAG (Retrieval-Augmented Generation) pipeline:
 
 
 
-git clone <your-repo-url>
+git clone https://github.com/mugdhas04/youtube-course-rag
 
 cd youtube-rag-project
 
@@ -124,9 +124,45 @@ streamlit run app.py
 
 
 
-\*(Section to be added — retrieval accuracy testing on a set of manually verified Q\&A pairs)\*
+To validate retrieval quality, 10 test questions were manually created, each paired with the video topic expected to contain the answer. Retrieval was evaluated using \*\*Hit Rate @ Top-3\*\* — whether the correct source video appeared among the top 3 retrieved chunks.
 
 
+
+\*\*Result: 10/10 (100%) on the DSA course dataset (20 videos, 1,101 chunks)\*\*
+
+
+
+| Question | Expected Topic | Hit? |
+
+|---|---|---|
+
+| What is time complexity? | Time Complexity | ✓ |
+
+| What is Big O notation? | Big O | ✓ |
+
+| How do you insert an element in an array? | Insertion | ✓ |
+
+| What is a linked list? | Linked List | ✓ |
+
+| Difference between linear and binary search? | Search | ✓ |
+
+| How to delete a node from a linked list? | Deletion | ✓ |
+
+| What is asymptotic notation? | Asymptotic Notation | ✓ |
+
+| What is a circular linked list? | Circular Linked List | ✓ |
+
+| Best case and worst case analysis? | Best/Worst Case | ✓ |
+
+| What is an abstract data type? | Abstract Data Type | ✓ |
+
+
+
+\*Note: this result reflects a well-scoped dataset with clearly distinct topics per video. Retrieval accuracy is expected to be lower on larger, more topically overlapping datasets — a natural next step is expanding this evaluation to the full 92-video playlist.\*
+
+
+
+Evaluation script: \[`evaluate.py`](evaluate.py)
 
 \## 🔮 Future Improvements
 
