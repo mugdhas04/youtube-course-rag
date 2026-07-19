@@ -178,6 +178,10 @@ Evaluation script: \[`evaluate.py`](evaluate.py)
 \## 📸 Demo
 
 
+**Ask questions, get grounded answers with clickable timestamped sources:**
 
-\*(Add screenshots here)\*
+![Chat demo](screenshots/chat-demo.png)
 
+**Manage multiple course playlists from the sidebar:**
+
+![Sidebar demo](screenshots/sidebar-demo.png)
