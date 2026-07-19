@@ -80,7 +80,7 @@ This is a standard RAG (Retrieval-Augmented Generation) pipeline:
 
 
 
-git clone <your-repo-url>
+git clone [<your-repo-url>](https://github.com/mugdhas04/youtube-course-rag)
 
 cd youtube-rag-project
 
