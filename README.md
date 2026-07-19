@@ -79,7 +79,6 @@ This is a standard RAG (Retrieval-Augmented Generation) pipeline:
 1\. Clone this repository
 
 
-
 git clone https://github.com/mugdhas04/youtube-course-rag
 
 cd youtube-rag-project
