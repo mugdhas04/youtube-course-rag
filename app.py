@@ -136,7 +136,7 @@ else:
         metadatas = results["metadatas"][0]
         distances = results["distances"][0]
 
-        if distances[0] > 1.3:
+        if distances[0] > 1.5:
             return "This doesn't seem to be covered in the course material I have. Try rephrasing, or ask about a topic covered in this course.", []
 
         context = "\n\n".join(retrieved_chunks)
